@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "techfabric": {
+      "type": "http",
+      "url": "https://www.techfabric.com/mcp"
+    }
+  }
+}

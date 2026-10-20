@@ -1,0 +1,20 @@
+---
+name: "write-case-study"
+description: "Draft a techfabric.com case study about a project you worked on. Your agent asks for the outcome numbers and their sources, and for the client's confirmation before it names a client the register doesn't approve. Use only when the engineer runs this command."
+argument-hint: "<project> [client]"
+disable-model-invocation: true
+---
+
+Write a case study for techfabric.com under my byline, through the techfabric MCP server, with kind "case-study".
+
+1. **Read the rules.** Read the editorial_rules resource (techfabric://editorial/rules) before you write a word, and follow it over anything here. It is the only copy of the house rules, client confidentiality first. The rules the checks hold a case study to most often: the four sections in order (Challenge, Strategy, Solution, Results), each opening with a bold one-line statement; a description of 70 to 160 characters; every number backed by the sources you send; and no client named unless the register approves it or the engineer says the client agreed.
+2. **The project.** Take the project, and the client if I named one, from what I typed with this command. Ask me for what's missing: what was built, and for what kind of client. Wait for my answer.
+3. **The client rule.** Read the client register in the rules and tell me what it says about the client. If it approves naming them in a case study, you may. If it doesn't, anonymise them by their industry and size, in words, with no figure I didn't give you and name them nowhere, unless I tell you the client agreed to be named: only then send client_confirmed: true, which records my word under my name. Never send it on your own judgement. It covers the name, not the results.
+4. **Ask for the outcome numbers.** Ask me for each result we measured and where it comes from (a dashboard, the changelog, my notes, the project's README). Never invent or estimate one. Send what I give you, with the project's own records you read, as sources: every number in the case study is checked against them. A source isn't an approval: a client's metric is published only with an approval in the register, so tell me which numbers need one.
+5. **Ask for the first-hand part.** Look through this repository and my notes for real work on the project, read only: change nothing. Then ask me, in one message, for what only I know: what we built or what broke, a number we measured and where it comes from, and what we'd do differently. Wait for my answers. Where I have none, write in TechFabric's "we'd" voice and claim no experience. Never invent a number, a result, a client or a quote.
+6. **Draft.** Write the whole case study: frontmatter (title, description, sector, stack, track, and client only under the client rule), then ## Challenge, ## Strategy, ## Solution and ## Results, each opening with a bold one-line statement.
+7. **Check it.** Call lint_draft on the whole draft, with kind "case-study" and the sources. It answers in about a second and costs nothing. Fix each finding in the passage it names and call it again, until ready is true. Then read the draft as the reader in its judge_rubric, answer each question as that reader would, and revise until every answer clears its threshold. Never use check_draft to iterate: it is the final verification, and it costs us. A finding that names a client I told you agreed to be named is the one exception: it clears when submit_draft (or update_draft) records client_confirmed, so leave the name in.
+8. **Submit.** Call submit_draft with kind "case-study", the title, the whole case study and the sources, and client_confirmed only as the client rule says. Show me the preview link its answer starts with.
+9. **Hand over.** Finish with the preview link, what you assumed, and your questions for me. Don't publish: when I'm happy with it, the publish command verifies it and publishes it after asking me, or I publish from the editor link in my email. Never show or ask for the editor link: it is only in my email.
+
+What I typed with the command: $ARGUMENTS

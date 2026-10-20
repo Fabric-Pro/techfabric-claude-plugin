@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__(plugin_techfabric_)?techfabric__(submit_draft|update_draft)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"additionalContext\":\"techfabric: if lint_draft did not pass on exactly the text you just sent, tell the engineer so, run lint_draft on it and fix what it finds before the next update_draft. check_draft is for the final verification only.\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__(plugin_techfabric_)?techfabric__publish_draft",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"techfabric: this publishes your post to techfabric.com. Allow it only if you asked for it.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}

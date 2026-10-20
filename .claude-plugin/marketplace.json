@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "techfabric",
+  "description": "TechFabric's plugins for Claude Code: write techfabric.com posts and case studies with the techfabric MCP server.",
+  "owner": {
+    "name": "TechFabric",
+    "url": "https://www.techfabric.com"
+  },
+  "plugins": [
+    {
+      "name": "techfabric",
+      "description": "The techfabric MCP server, its commands (/techfabric:write-post, /techfabric:publish and the rest) and the techfabric-blog skill.",
+      "source": "./plugins/techfabric"
+    }
+  ]
+}

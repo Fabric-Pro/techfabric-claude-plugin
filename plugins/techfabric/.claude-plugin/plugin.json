@@ -1,0 +1,21 @@
+{
+  "name": "techfabric",
+  "displayName": "TechFabric",
+  "description": "Write, check and publish techfabric.com blog posts and case studies from Claude Code: the techfabric MCP server, its commands (/techfabric:write-post, /techfabric:publish and the rest) and the techfabric-blog skill.",
+  "author": {
+    "name": "TechFabric",
+    "url": "https://www.techfabric.com"
+  },
+  "homepage": "https://www.techfabric.com/mcp-servers#commands",
+  "privacyPolicyUrl": "https://www.techfabric.com/mcp-servers#privacy",
+  "version": "1.0.0",
+  "repository": "https://github.com/Fabric-Pro/techfabric-claude-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "techfabric",
+    "blog",
+    "mcp",
+    "writing"
+  ],
+  "icon": "./icon.png"
+}
