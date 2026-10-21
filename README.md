@@ -32,8 +32,8 @@ Type `/techfabric:` to see them. Everything after a command is passed to it, so 
 
 | Command | What it does |
 | --- | --- |
-| `/techfabric:write-post [topic, or today's brief]` | Write and publish a techfabric.com blog post under your byline, from today's brief or a topic of your own. Your agent asks you for the first-hand detail, lints, files and verifies the draft until every check passes, then publishes it only once you say yes. |
-| `/techfabric:write-case-study <project> [client]` | Write and publish a techfabric.com case study about a project you worked on. Your agent asks for the outcome numbers and their sources, and for the client's confirmation before naming a client the register doesn't approve. It verifies the draft and publishes only once you say yes. |
+| `/techfabric:write-post [topic, or today's brief] [quick]` | Write and publish a techfabric.com blog post under your byline, from today's brief or a topic of your own. Your agent interviews you first (about seven questions, its suggested answers filled in), agrees an outline with you, then drafts, lints, files and verifies it until every check passes, and publishes it only once you say yes. |
+| `/techfabric:write-case-study <project> [client] [quick]` | Write and publish a techfabric.com case study about a project you worked on. Your agent interviews you first (the outcome numbers and their sources, and whether the client may be named), agrees the four sections with you, then drafts and verifies it, and publishes only once you say yes. |
 | `/techfabric:check [draft id]` | Run techfabric.com's checks on a draft and explain each finding in plain words, with the fix your agent proposes. Nothing changes until you agree. |
 | `/techfabric:preview <draft id>` | Show a draft as techfabric.com will publish it: the preview link, or the draft app in a host that renders MCP Apps. |
 | `/techfabric:publish <draft id>` | Publish one of your drafts to techfabric.com. Your agent checks it, tells you what still fails, and publishes only after you say yes. |
