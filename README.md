@@ -37,7 +37,7 @@ Type `/techfabric:` to see them. Everything after a command is passed to it, so 
 | `/techfabric:check [draft id]` | Run techfabric.com's checks on a draft and explain each finding in plain words, with the fix your agent proposes. Nothing changes until you agree. |
 | `/techfabric:preview <draft id>` | Show a draft as techfabric.com will publish it: the preview link, or the draft app in a host that renders MCP Apps. |
 | `/techfabric:publish <draft id>` | Publish one of your drafts to techfabric.com. Your agent checks it, tells you what still fails, and publishes only after you say yes. |
-| `/techfabric:revise <draft id> [feedback]` | Apply a reviewer's feedback to one of your drafts, check it again and save it, keeping your first-hand facts as they are. |
+| `/techfabric:revise <draft id or post URL> [feedback]` | Apply a reviewer's feedback, or your own change, to one of your drafts or to a post that's already live, check it again and save it, keeping your first-hand facts as they are. |
 | `/techfabric:status [draft id]` | List your drafts and where each one stands, or one draft in detail: what's failing, its preview, and what to do next. |
 
 Each command gives Claude the exact sequence of tools to call, and reads the house rules from the server's editorial_rules resource. The techfabric-blog skill carries the same rules for when you write without a command.
