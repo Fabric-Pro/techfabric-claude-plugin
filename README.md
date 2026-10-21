@@ -39,6 +39,10 @@ Type `/techfabric:` to see them. Everything after a command is passed to it, so 
 | `/techfabric:publish <draft id>` | Publish one of your drafts to techfabric.com. Your agent checks it, tells you what still fails, and publishes only after you say yes. |
 | `/techfabric:revise <draft id or post URL> [feedback]` | Apply a reviewer's feedback, or your own change, to one of your drafts or to a post that's already live, check it again and save it, keeping your first-hand facts as they are. |
 | `/techfabric:status [draft id]` | List your drafts and where each one stands, or one draft in detail: what's failing, its preview, and what to do next. |
+| `/techfabric:blog-post-template [topic]` | Start a techfabric.com blog post from the ready-made template: the shape the checks hold it to, what goes in each part, and a skeleton your agent fills in from your own work. |
+| `/techfabric:case-study-template [project]` | Start a techfabric.com case study from the ready-made template: the four sections, the card's frontmatter, the client and number rules, and a skeleton your agent fills in from the project. |
+| `/techfabric:linkedin-post <post URL or slug>` | Draft a LinkedIn post about a published techfabric.com post, in your voice, checked against the site's writing rules. You post it yourself: nothing is posted for you. |
+| `/techfabric:performance [post URL or slug]` | How one of your published posts is doing in Google: clicks, impressions, CTR and position against the month before, the searches it shows for, whether it's indexed, and what to improve. Leave the post out for all of yours. |
 
 Each command gives Claude the exact sequence of tools to call, and reads the house rules from the server's editorial_rules resource. The techfabric-blog skill carries the same rules for when you write without a command.
 
