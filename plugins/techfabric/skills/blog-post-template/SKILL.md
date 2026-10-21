@@ -25,16 +25,17 @@ The shape the site's checks hold a blog post to, what goes in each part, and a s
 ## Frontmatter
 
 - title: one clause, in sentence case, that names the subject. No verdict or advice after a colon, and no trailing period.
+- metaTitle: only when the title runs past 60 characters: a shorter title for search results that leads with the phrase people search for.
 - description: 70 to 160 characters, in the same order as the opening: the reader's problem, then what the post gives them. It is the search snippet and the social card.
-- tags: reuse tags the blog already has. A tag used once is an archive page with one post on it.
+- tags: reuse tags the blog already has (list_posts shows them). A tag used once is an archive page with one post on it.
 - Leave author, date and draft out: submit_draft sets them to your byline, today in Phoenix and true.
 
 ## Opening
 
-- Before the first heading, one or two short paragraphs.
-- Sentence one is the reader's problem in their own words, with one concrete detail (a table, a number you measured, the day it broke).
-- Sentence two says who we are and what we saw first-hand: what we built, or what broke for us.
-- Lead into the first section. Never map the post ('In this post...', 'Below is how...').
+- Before the first heading, two to four short paragraphs, in the order of the opening pattern (editorial/voice.md).
+- Sentence one is the reader's problem in their own words, named by one concrete detail: a system, a step, a figure. Never their job title, and never our own incident report.
+- Sentence two says who we are and our first-hand angle: the engineer in their TechFabric role, or TechFabric's engineers, and the real work behind the post. A post with no story gives our position here instead.
+- Then what changes for the reader once the problem is solved, then how, which leads into the first section. Never map the post ('In this post...', 'Below is how...').
 
 ## Sections
 
@@ -44,8 +45,8 @@ The shape the site's checks hold a blog post to, what goes in each part, and a s
 
 ## Diagram
 
-- One ```mermaid block, placed beside the prose that names its labels.
-- Its first line is %% caption: followed by the point the diagram makes, as a sentence.
+- One ```mermaid block, placed beside the prose that names its labels: a plain flowchart TD, eight nodes at most, every label in double quotes.
+- Its first line is %% caption: followed by the point the diagram makes, as a sentence of at least eight words with a verb.
 - Keep each label short. A fact belongs in the prose, never only in a box.
 
 ## Ending
@@ -54,7 +55,7 @@ The shape the site's checks hold a blog post to, what goes in each part, and a s
 
 ## Frequently asked questions
 
-- A ## Frequently asked questions section at the end, with at least 3 ### questions a reader would search for.
+- A ## Frequently asked questions section at the end, with at least 3 ### questions a reader would search for, each heading ending in a question mark.
 - Each answer adds something the body doesn't already say, in two to four sentences.
 
 ## The skeleton
@@ -69,9 +70,9 @@ tags:
   - "{{fill: a tag the blog already uses}}"
 ---
 
-{{fill: the reader's problem in their words, with one concrete detail.}} {{fill: who we are, and what we built or saw go wrong, first-hand.}}
+{{fill: the reader's problem in their words, named by one concrete detail.}} {{fill: who we are, and the real work behind this post, or our position if there is no story.}}
 
-{{fill: one more short paragraph that leads into the first section.}}
+{{fill: what changes for the reader once the problem is solved, and how, leading into the first section.}}
 
 ## {{fill: what the first section covers}}
 
@@ -79,7 +80,7 @@ tags:
 
 ```mermaid
 %% caption: {{fill: the point this diagram makes, as a sentence}}
-flowchart LR
+flowchart TD
   A["{{fill: first step}}"] --> B["{{fill: second step}}"]
   B --> C["{{fill: what it produces}}"]
 ```
@@ -88,19 +89,21 @@ flowchart LR
 
 {{fill: the settings, the numbers you measured and where each comes from, and what we'd do differently.}}
 
+## {{fill: what the reader does first}}
+
 {{fill: a closing paragraph of two sentences that says what the reader should do first.}}
 
 ## Frequently asked questions
 
-### {{fill: a question a reader would search for}}
+### {{fill: a question a reader would search for}}?
 
 {{fill: an answer that adds to the body, in two to four sentences.}}
 
-### {{fill: a second question}}
+### {{fill: a second question}}?
 
 {{fill: its answer.}}
 
-### {{fill: a third question}}
+### {{fill: a third question}}?
 
 {{fill: its answer.}}
 

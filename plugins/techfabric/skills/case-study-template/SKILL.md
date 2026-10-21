@@ -21,11 +21,11 @@ If this is a scheduled or unattended run, or nobody answers you, stop after subm
 
 # A techfabric.com case study: the template
 
-The shape the site's checks hold a case study to, what goes in each part, and a skeleton to fill in. Send it with kind "case-study". Read the editorial_rules resource (techfabric://editorial/rules) first: client confidentiality comes before everything here.
+The shape the site's checks hold a case study to, what goes in each part, and a skeleton to fill in. Submit the case study with kind "case-study". Read the editorial_rules resource (techfabric://editorial/rules) first: client confidentiality comes before everything here.
 
 ## Frontmatter
 
-- title: what was built, for whom, in one line.
+- title: what the client achieved, in one line, leading with their outcome rather than our work.
 - description: one or two sentences for a stranger, 70 to 160 characters: the card's summary and the search snippet.
 - sector: the client's industry, in a word or two.
 - stack: a list of the platforms and tools the work used.
@@ -36,17 +36,17 @@ The shape the site's checks hold a case study to, what goes in each part, and a 
 ## Challenge
 
 - ## Challenge comes first, and opens with a bold one-line statement of its argument, then prose.
-- The problem as the client had it: what was slow, risky or costly, and why it mattered to them.
+- The situation the client was in, and why it mattered to them: a before state, never a failing of theirs.
 
 ## Strategy
 
 - ## Strategy comes after ## Challenge, and opens with a bold one-line statement of its argument, then prose.
-- The approach we chose, and why that one over the others we considered.
+- The approach we chose, and why. Name an alternative we turned down only when the engineer says it was considered.
 
 ## Solution
 
 - ## Solution comes after ## Strategy, and opens with a bold one-line statement of its argument, then prose.
-- What we built: the architecture, the platforms, what changed for the people who use it.
+- What we built: the architecture and the platforms.
 
 ## Results
 
@@ -56,7 +56,11 @@ The shape the site's checks hold a case study to, what goes in each part, and a 
 ## The client rule
 
 - Name the client only when the client register (the editorial_rules resource, signed in) approves naming them in a case study, or when the engineer says the client agreed: then send client_confirmed: true, which records their word under their name.
-- Otherwise anonymise them by industry and size, in words ('a regional lender with about 40 branches'), and name them nowhere: not in the title, the text, an image or a file name.
+- Otherwise anonymise them by industry and size, in words with no figure ('a regional lender'), and name them nowhere: not in the title, the text, an image or a file name.
+
+## Never write a client down
+
+- Describe the before state as the client's situation, never as a failing of theirs: no word that scores a point off the people who hired us (editorial/voice.md).
 
 ## The number rule
 
@@ -69,12 +73,12 @@ Replace every {{fill: ...}} with the engineer's own material. lint_draft fails o
 
 ````markdown
 ---
-title: "{{fill: what was built, for whom, in one line}}"
+title: "{{fill: what the client achieved, in one line}}"
 description: "{{fill: one or two sentences for a stranger, 70 to 160 characters}}"
 sector: "{{fill: the client's industry}}"
 stack:
   - "{{fill: a platform the work used}}"
-track: ai
+track: "{{fill: one of ai, migration, other}}"
 ---
 
 ## Challenge
