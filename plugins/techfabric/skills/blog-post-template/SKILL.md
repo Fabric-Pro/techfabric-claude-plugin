@@ -51,7 +51,7 @@ The shape the site's checks hold a blog post to, what goes in each part, and a s
 
 ## Ending
 
-- End the body, before the questions, on a closing paragraph of two sentences, or one long enough to carry a point, that says what the reader should do first. Write it as prose, with no one-line kicker and no recap of the post.
+- End the body, before the questions, on a closing paragraph of two sentences or more that says what the reader should do first. Write it as prose, with no one-line kicker and no recap of the post.
 
 ## Frequently asked questions
 
