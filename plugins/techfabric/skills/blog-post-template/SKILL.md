@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 Start a techfabric.com blog post under my byline from the ready-made template, through the techfabric MCP server.
 
-1. **Read the rules.** Read the editorial_rules resource (techfabric://editorial/rules) before you write a word, and follow it over anything here. It is the only copy of the house rules, client confidentiality first. The rules the checks hold a post to most often: the reader is a technology or business leader deciding whether this matters to their organisation (the leadership reader), unless the topic names another; the opening pattern, where sentence one is the reader's problem in their words with a concrete detail and sentence two is who we are and our first-hand angle; a title that is one clause naming the subject; a description of 70 to 160 characters in the same order as the opening; a diagram (a mermaid block); and FAQs at the end.
+1. **Read the rules.** Read the editorial_rules resource (techfabric://editorial/rules) before you write a word, and follow it over anything here. It is the only copy of the house rules, client confidentiality first. The rules the checks hold a post to most often: the reader is a technology or business leader deciding whether this matters to their organisation (the leadership reader), unless the topic names another; the mode-aware opening rule: the reader's problem in their words with a concrete detail where relevant, and our first-hand angle only when evidenced, with no fixed sentence order; a title that is one clause naming the subject; a description of 70 to 160 characters in the same order as the opening; a diagram (a mermaid block); and FAQs at the end.
 2. **The template.** It is below, and it is the techfabric://templates/blog-post resource too. Follow its shape and fill every {{fill: ...}} with my own material: lint_draft fails one left in.
 3. **The topic.** Take it from what I typed with this command. If I typed nothing, ask me what the post is about, and wait.
 4. **Ask for the first-hand part.** Look through this repository and my notes for real work on the topic, read only: change nothing. Then ask me, in one message, for what only I know: what we built or what broke, a number we measured and where it comes from, and what we'd do differently. Wait for my answers, and keep them word for word: send them as sources with submit_draft and update_draft, because the fact-check treats them as my own account of the work, and a first-hand sentence my sources don't back comes back as a finding. Where I have none, write in TechFabric's "we'd" voice and claim no experience. Say plainly what I built, in the past tense, with "we" as the actor ("we built a prototype that ..."), never our product or company in the third person; a prototype is called one once, in that sentence, and the post never disclaims itself (no caveat about the examples, the article or the diagram). Never invent a number, a result, a client or a quote.
@@ -32,10 +32,10 @@ The shape the site's checks hold a blog post to, what goes in each part, and a s
 
 ## Opening
 
-- Before the first heading, two to four short paragraphs, in the order of the opening pattern (editorial/voice.md).
-- Sentence one is the reader's problem in their own words, named by one concrete detail: a system, a step, a figure. Never their job title, and never our own incident report.
-- Sentence two says who we are and our first-hand angle: the engineer in their TechFabric role, or TechFabric's engineers, and the real work behind the post. A post with no story gives our position here instead.
-- Then what changes for the reader once the problem is solved, then how, which leads into the first section. Never map the post ('In this post...', 'Below is how...').
+- Before the first heading, establish the subject and its consequence in readable prose (editorial/voice.md). This template is a starting point, not a fixed sentence order.
+- Choose the supported problem, result, decision, question or mechanism that leads into this story. Use concrete detail and the reader's words, not their job title.
+- In an engineering story, bring our actual work in naturally within the first two paragraphs. News may give a sourced change and proposed check; reference can answer directly. No invented company anecdote.
+- Make clear why the subject matters and lead naturally into the first section, without a map line ('In this post...', 'Below is how...').
 
 ## Sections
 
@@ -70,13 +70,13 @@ tags:
   - "{{fill: a tag the blog already uses}}"
 ---
 
-{{fill: the reader's problem in their words, named by one concrete detail.}} {{fill: who we are, and the real work behind this post, or our position if there is no story.}}
+{{fill: this story's supported problem, result, decision or mechanism, with a concrete detail.}} {{fill: actual work for an engineering story, or a sourced change and proposed check for news.}}
 
 {{fill: what changes for the reader once the problem is solved, and how, leading into the first section.}}
 
 ## {{fill: what the first section covers}}
 
-{{fill: the first part of the argument, in two paragraphs or more, from your own work.}}
+{{fill: the first part of the argument, from supplied evidence.}}
 
 ```mermaid
 %% caption: {{fill: the point this diagram makes, as a sentence}}
