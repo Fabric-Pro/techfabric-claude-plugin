@@ -14,6 +14,6 @@ Publish my techfabric.com draft (the id I typed with this command; ask me if I t
 5. **Publish.** Call publish_draft with the id (and override, if I chose Publish anyway). It asks me again itself, by a form in my client, or it returns a one-time confirmation: send that back as confirmation on a second call only after I said yes. (review_before_publishing returns the same question and confirmation without publishing anything.)
 6. **After.** Call get_status until its state is published, then show me live_url. If the merge or deploy failed, it is back to drafted: tell me what failed.
 
-Never publish without my yes in this conversation, and never in a scheduled or unattended run: if nobody can answer you, stop before publish_draft. Never send back a confirmation I didn't give. Never show or ask for the editor link: it is only in my email.
+Never publish without my yes in this conversation, and never in a scheduled or unattended run: if nobody can answer you, stop before publish_draft. Never send back a confirmation I didn't give. Never ask me for the editor link in my email. If I want to edit in the browser, call open_editor and show me its link: it works once and expires 15 minutes after you ask for it.
 
 What I typed with the command: $ARGUMENTS

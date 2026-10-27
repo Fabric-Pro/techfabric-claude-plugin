@@ -11,6 +11,6 @@ If I typed a draft id with this command: Call get_status with the id. get_status
 
 Otherwise: Call list_drafts (if the server lacks it, read the resources it lists as techfabric://drafts/{id}): my drafts, newest first, each with its state, preview link and next_action. Filter it as I ask: state (checks_failing, ready_to_publish, open and the rest), kind, and created_after and created_before for a day ("yesterday" is the day before the `today` in its answer). If it is refused for a sign-in, tell me to connect with Microsoft (my client's Connect or Authenticate button for the techfabric server). Show me a short table: id, title, state, created, preview link, next step. For one in state checks_failing, call get_status with its id and add what is failing.
 
-Never show or ask for the editor link: it is only in my email.
+Never ask me for the editor link in my email. If I want to edit in the browser, call open_editor and show me its link: it works once and expires 15 minutes after you ask for it.
 
 What I typed with the command: $ARGUMENTS

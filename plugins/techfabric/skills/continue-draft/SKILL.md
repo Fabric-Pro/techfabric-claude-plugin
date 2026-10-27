@@ -11,6 +11,6 @@ Continue my techfabric.com draft (the id I typed with this command; if I typed n
 2. **The next step.** Do what its next_action says: its call names the tool and the arguments it knows. Then do what the next answer's next_action says, and so on, one step at a time. Never guess a fact the checks ask for: ask me, and send my words as sources. When next_action says wait, say so, wait as its instruction says, then make the call it names; when it says report, stop and show me what's left.
 3. **Publish, only with my yes.** When next_action says publish, show me the preview link and ask me: "Publish '<title>' to techfabric.com now?" and wait. Only on my yes, call publish_draft with the id: it asks me itself, or returns a one-time confirmation you send back only after I say yes. Then call get_status until its state is published and show me live_url.
 
-If this is a scheduled or unattended run, or nobody answers you, never call publish_draft. Never show or ask for the editor link: it is only in my email.
+If this is a scheduled or unattended run, or nobody answers you, never call publish_draft. Never ask me for the editor link in my email. If I want to edit in the browser, call open_editor and show me its link: it works once and expires 15 minutes after you ask for it.
 
 What I typed with the command: $ARGUMENTS

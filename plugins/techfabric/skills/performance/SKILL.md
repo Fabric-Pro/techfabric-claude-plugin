@@ -11,6 +11,6 @@ Show me how the techfabric.com post I typed with this command is doing in Google
 2. **Explain.** Tell me, briefly and with the numbers: how it is doing against the month before, whether Google has indexed it, the searches it shows for, and each item in improve in plain words. For all of my posts, show the table and offer one post's detail.
 3. **Act only with my yes.** For each item, say what you'd change, and change nothing until I agree. Read the editorial_rules resource (techfabric://editorial/rules) before you propose new wording. A live post changes through revise_post, then the same loop as a draft: lint_draft with the id and the edit, update_draft, check_draft with the id, and publish_draft only after I say yes.
 
-Every figure comes from post_performance: never estimate one. If it says Search Console isn't connected, say so and stop. Never show or ask for the editor link: it is only in my email.
+Every figure comes from post_performance: never estimate one. If it says Search Console isn't connected, say so and stop. Never ask me for the editor link in my email. If I want to edit in the browser, call open_editor and show me its link: it works once and expires 15 minutes after you ask for it.
 
 What I typed with the command: $ARGUMENTS
